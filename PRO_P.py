@@ -11,7 +11,7 @@ milk_prices = {
 # Route to render the order page
 @app.route('/')
 def PRO_H():
-    return render_template('PRO_H.html')
+    return render_template('index.html')
 
 # Route to handle the order
 @app.route('/order', methods=['POST'])
@@ -39,7 +39,7 @@ def order():
     total_amount = milk_prices[product] * quantity
 
     # Render confirmation page with the order details
-    return render_template('PRO_Conforamtion_message.html',
+    return render_template('index1.html')400,
                            name=name,
                            address=address,
                            phone=number,
